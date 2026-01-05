@@ -24,7 +24,7 @@ function App() {
     //   (例: 年率であれば日割り計算が不要、期間レートであればそのまま使用)
     // - 計算式: 理論先物価格 = 先物価格 / (1 + (フォワードレート / 100))
     const rateDecimal = forwardRate / 100;
-    
+
     // 理論上の原資産価格（先物価格の単位あたり）
     // 先物価格を現在価値に割り引く
     const theoreticalUnderlyingPrice = futuresPrice / (1 + rateDecimal);
@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <h1>貴金属ETF裁定取引</h1>
-      
+
       <div className="description-section">
         <h2>裁定取引のロジック</h2>
         <p>
@@ -58,7 +58,7 @@ function App() {
 
       <div className="card calculator-section">
         <h3>乖離率計算機</h3>
-        
+
         <div className="input-group">
           <label>
             OSE先物価格 (円):
